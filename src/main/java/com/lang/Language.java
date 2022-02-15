@@ -19,24 +19,24 @@ public class Language {
     }
 
 
-    public List getWordsId(){
-        for(int i=0; i<5; i++){
-            id = String.valueOf(rand.nextInt(7)+1);
+    public List getWordsId() {
+        for (int i = 0; i < 5; i++) {
+            id = String.valueOf(rand.nextInt(7) + 1);
             wordsIds.add(id);
         }
         return wordsIds;
     }
 
-    public List getWords(ArrayList wordsIds){
-        for (Object word: wordsIds) {
+    public List getWords(ArrayList wordsIds) {
+        for (Object word : wordsIds) {
             words.add(bundleEn.getString(String.valueOf(word)));
 
         }
         return words;
     }
 
-    public void seeWords(ArrayList words){
-        for (Object word: words) {
+    public void seeWords(ArrayList words) {
+        for (Object word : words) {
             System.out.println(word);
         }
     }
